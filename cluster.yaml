@@ -1,0 +1,17 @@
+imports:
+- path: cluster.jinja
+
+resources:
+- name: cluster
+  type: cluster.jinja
+  properties:
+    projectId: awesome-project
+    clusterName: awesome-cluster
+    crBucket: eu.artifacts.awesome-project.appspot.com
+    zone: europe-west3-a
+    network: projects/awesome-project/global/networks/awesomenetwork
+    subnetwork: projects/awesome-project/regions/europe-west3/subnetworks/awesomesubnetwork
+    gitUrl: git@github.com:Tyrion85/automatic-k8s-gcp.git
+    gitBranch: master
+    gitPath: apps
+      
